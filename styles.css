@@ -1,0 +1,371 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Urban;
+  src: url("UrbanJungleDEMO.otf");
+}
+
+@font-face {
+  font-family: Gym;
+  src: url("GYM.ttf");
+}
+
+.topbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  backdrop-filter: blur(100px);
+  position: fixed;
+  z-index: 5;
+  flex-wrap: wrap;
+}
+
+.links {
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 1em;
+  white-space: nowrap;
+}
+
+a {
+  color: #D4AF37;
+  text-decoration: none;
+}
+
+.links a {
+  padding: 0.5em;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.dropdown-links {
+  display: none;
+}
+
+#menu-toggle:checked ~ .dropdown-links {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 1em;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.dropdown-links a {
+  margin-bottom: 0.5em;
+}
+  
+  #menu-toggle:checked ~ .dropdown-links {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 1em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .dropdown-links a {
+    margin-bottom: 0.5em;
+  }
+  
+  .menu-btn.open .menu-icon {
+    background-color: white;
+  }
+  
+  /* Burger icon styling */
+  
+  .menu-icon__burger {
+    width: 30px;
+    height: 3px;
+    background-color: #D4AF37;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-btn.open .menu-icon__burger:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-btn.open .menu-icon__burger:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-btn.open .menu-icon__burger:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+.logo-container {
+  padding: 0.5em;
+  font-size: 40px;
+  color: #D4AF37;
+  font-family: Urban;
+  display: flex;
+}
+
+.flex {
+  font-size: 50px;
+  font-family: Gym;
+  color: #D4AF37;
+}
+
+.socials {
+  padding: 2em;
+  white-space: nowrap;
+}
+
+.icon {
+  font-size: 30px;
+  color: #D4AF37;
+}
+
+.socials a {
+  padding: 0.5em;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-background-text {
+  font-size: 70px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20%;
+  text-align: center;
+}
+
+#text1 {
+  margin-right: 15em;
+  color: #D4AF37;
+}
+
+#text2 {
+  margin-right: 7.5em;
+  color: white;
+}
+
+#text3 {
+  margin-right: 0em;
+  color: #D4AF37;
+}
+
+#text4 {
+  margin-right: -11em;
+  color: white;
+}
+
+.signup-button {
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  width: 10em;
+  height: 40px;
+  font-size: 20px;
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+  border: 4px solid #D4AF37;
+  color: white;
+}
+
+.about-container {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 5% 10%;
+  box-sizing: border-box;
+}
+
+.about-mission-container,
+.about-coach-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 3s, transform 2s;
+}
+
+.about-mission-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-coach-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-mission-title,
+.about-coach-title {
+  color: #D4AF37;
+  text-decoration: underline;
+  padding-bottom: 0.5em;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about-mission-text {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 2em;
+}
+
+.about-coach-text {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-bottom: 1em;
+}
+
+.about-coach-content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+#coach-pic {
+  width: 40%;
+  height: auto;
+  margin-right: 2em;
+}
+
+.about-coach-text::before {
+  content: '';
+  border-left: 2px solid #D4AF37;
+  height: 100%;
+  position: absolute;
+  left: calc(40% + 1em);
+  top: 0;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .logo-container {
+      font-size: 24px;
+    }
+  
+    .flex {
+      font-size: 32px;
+    }
+  
+    .links {
+      display: none;
+    }
+  
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        margin-right: 1em;
+        cursor: pointer;
+      }
+      
+      .menu-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #D4AF37;
+        margin: 6px 0;
+        transition: background-color 0.3s ease;
+      }
+    
+      #menu-toggle {
+        display: none;
+      }
+    
+      .menu-btn.open .menu-icon {
+        background-color: white;
+      }
+  
+    .topbar {
+      padding: 0 5%;
+    }
+  
+    .signup-button {
+      left: 50%;
+      bottom: 2.5%;
+      transform: translateX(-50%);
+    }
+  
+    .hero-background-text {
+      font-size: 50px;
+      padding-top: 10%;
+    }
+  
+    #text1 {
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  
+    #text2 {
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  
+    #text3 {
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  
+    #text4 {
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  
+    .about-mission-title,
+    .about-coach-title {
+      font-size: 24px;
+    }
+  
+    .about-coach-content {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    #coach-pic {
+      width: 60%;
+      margin-right: 0;
+      margin-bottom: 2em;
+    }
+  
+    .about-coach-text::before {
+      display: none;
+    }
+  }
+  
+  /* Additional styles for closing the dropdown menu */
+  body:not(.menu-open) .topbar .dropdown-links {
+    display: none;
+  }
+  
+  
+  
