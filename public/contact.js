@@ -41,6 +41,6 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
       }, 5000);
     });
 
-  // Clear the form fields after submission (optional)
+  // Clear the form fields after submission 
   document.getElementById("contact-form").reset();
 });
