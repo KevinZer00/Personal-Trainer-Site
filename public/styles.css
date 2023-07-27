@@ -30,8 +30,13 @@ html, body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
+=======
+  backdrop-filter: blur(10px); /* Fallback for browsers that support backdrop-filter */
+  -webkit-backdrop-filter: blur(10px); /* For Safari and iOS */
+>>>>>>> b05c5ba8ceaa5ac74ea142ed14fb7ba043d597dd
   top: 0;
   left: 0;
   z-index: 20;
