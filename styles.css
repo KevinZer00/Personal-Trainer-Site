@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  background-color: black;
+  position: relative;
+  background-image: url("bricks.jpg");
+  
 }
 
 @font-face {
@@ -15,6 +19,7 @@ body {
   font-family: Gym;
   src: url("GYM.ttf");
 }
+
 
 .topbar {
   height: 10vh;
@@ -200,6 +205,107 @@ a {
   color: white;
 }
 
+
+
+.services-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0); /* Added background color for the container */
+}
+
+.services-title {
+  position: absolute;
+  color: #D4AF37;
+  text-decoration: underline;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 40px;
+}
+
+.services-tables {
+  display: flex;
+  padding: 75px;
+}
+
+.services-nutrition-container,
+.services-training-container {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 40em;
+}
+
+.services-nutrition,
+.services-training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7); /* Updated background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.services-nutrition h2,
+.services-training h2 {
+  margin-bottom: 10px;
+  color: #D4AF37;
+}
+
+.services-nutrition table,
+.services-training table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.services-nutrition th,
+.services-training th {
+  background-color: rgba(212, 175, 55, 0.7);
+  color: white;
+  padding: 10px;
+}
+
+.services-nutrition td,
+.services-training td {
+  padding: 30px;
+}
+
+.services-nutrition tbody tr:nth-child(even),
+.services-training tbody tr:nth-child(even) {
+  background-color: rgba(232, 232, 232, 0.7);
+}
+
+.services-nutrition td:first-child,
+.services-training td:first-child {
+  font-weight: bold;
+}
+
+.services-nutrition td:last-child,
+.services-training td:last-child {
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about-container {
   min-height: 100vh;
   background-color: black;
@@ -266,6 +372,29 @@ a {
   left: calc(40% + 1em);
   top: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries for Responsive Design */
 
@@ -367,5 +496,6 @@ a {
     display: none;
   }
   
+
   
   
