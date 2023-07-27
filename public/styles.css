@@ -30,9 +30,8 @@ html, body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Fallback for browsers that support backdrop-filter (optional) */
-  -webkit-backdrop-filter: blur(10px); /* For Safari and iOS */
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
   top: 0;
   left: 0;
   z-index: 20;
@@ -271,6 +270,7 @@ html, body{
   text-decoration: underline;
   font-size: 40px;
   font-weight: bold;
+  margin-top: 1em;
   padding: 20px;
 }
 
@@ -359,6 +359,7 @@ html, body{
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(5px);
+  margin-bottom: 5em;
 }
 
 .about-mission-container,
@@ -377,7 +378,7 @@ html, body{
 .about-mission-container {
   height: 250px;
   background-color: black;
-  margin-bottom: 4em;
+  margin-bottom: 7em;
   align-items: center;
 }
 
