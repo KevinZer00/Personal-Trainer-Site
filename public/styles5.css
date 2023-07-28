@@ -1,0 +1,224 @@
+@media (min-width: 1400px) and (max-width: 1900px) {
+
+    .top-nav {
+      background-color: transparent; /* Make background fully transparent */
+      -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari and iOS */
+      backdrop-filter: blur(10px); /* Optional fallback for other browsers that support backdrop-filter */
+    }
+
+    .logo {
+        font-size: 36px;
+      }
+    
+      .logo-pic {
+        width: 70px;
+        height: 70px;
+      }
+    
+      .hero {
+        height: 100vh;
+      }
+    
+      .hero-background-text {
+        font-size: 70px;
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 20%;
+        text-align: center;
+        z-index: 4;
+      }
+    
+      #text1 {
+        margin-right: 15em;
+        color: #D4AF37;
+      }
+      
+      #text2 {
+        margin-right: 7.5em;
+        color: white;
+      }
+      
+      #text3 {
+        margin-right: 0em;
+        color: #D4AF37;
+      }
+      
+      #text4 {
+        margin-right: -11em;
+        color: white;
+      }
+    
+      .services-title {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+       
+      }
+    
+      .services-nutrition,
+      .services-training {
+        font-size: 18px;
+        padding: 8px;
+      }
+    
+      .calendly-container {
+        margin-top: 2em;
+      }
+    
+  
+      .about-mission-container {
+          height: 50%;
+      }
+      .about-mission-text {
+        font-size: 24px;
+        padding: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+    
+      .about-mission-author {
+        font-size: 22px;
+        margin-left: 80%;
+        text-align: center;
+      }
+    
+      .about-coach-container {
+        width: 100%;
+        margin: 0;
+      }
+    
+      #coach-pic {
+        width: 25em;
+        margin: 0;
+      }
+    
+      .about-coach-content {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .about-coach-title {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .about-coach-text-title {
+        font-size: 18px;
+        margin-top: 0.5em;
+      }
+    
+      .about-coach-text {
+        font-size: 20px;
+        margin-top: 0.5em;
+      }
+    
+      .clients-container {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    
+      .clients-container-title {
+        color: #D4AF37;
+        text-decoration: underline;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+      }
+    
+      .clients-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 0.5em;
+      }
+    
+      .client {
+        background-color: #000000;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        border: 1px solid #D4AF37;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        
+      }
+    
+      .client img {
+        width: 350px; 
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+    
+      .client-name {
+        color: #D4AF37;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+    
+      .client-quote {
+        font-style: italic;
+        font-size: 16px;
+      }
+    
+      .ending-content {
+        width: 30em;
+      }
+    
+      .ending-contact-title {
+        font-size: 24px;
+      }
+    
+      .ending-contact h2 {
+        font-size: 20px;
+      }
+    
+      .ending-contact p {
+        font-size: 16px;
+      }
+    
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        font-size: 16px;
+      }
+    
+      .submit-button {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+      }
+    
+      .ending-footer {
+        font-size: 14px;
+      }
+
+      .confirmation-message {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+      }
+      
+      .show-message {
+        display: block;
+      }
+}
