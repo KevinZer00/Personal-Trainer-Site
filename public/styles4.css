@@ -1,4 +1,11 @@
 @media (min-width: 1024px) and (max-width: 1400px) {
+
+    .top-nav {
+      background-color: transparent; /* Make background fully transparent */
+      -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari and iOS */
+      backdrop-filter: blur(10px); /* Optional fallback for other browsers that support backdrop-filter */
+    }
+
     .logo {
         font-size: 36px;
       }
