@@ -13,12 +13,12 @@ html, body{
 
 @font-face {
   font-family: Urban;
-  src: url("UrbanJungleDEMO.otf");
+  src: url("fonts/UrbanJungleDEMO.otf");
 }
 
 @font-face {
   font-family: Gym;
-  src: url("GYM.ttf");
+  src: url("fonts/GYM.ttf");
 }
 
 
@@ -44,7 +44,7 @@ html, body{
 
 .logo {
   padding: 0.5em;
-  font-size: 36px;
+  font-size: 48px;
   color: #D4AF37;
   font-family: Urban;
 }
@@ -76,7 +76,7 @@ html, body{
 }
 
 .menu a {
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: bold;
   color: #D4AF37;
@@ -196,7 +196,7 @@ html, body{
 }
 
 .hero-background-text {
-  font-size: 70px;
+  font-size: 100px;
   font-weight: bold;
   position: relative;
   display: flex;
@@ -265,7 +265,7 @@ html, body{
 .services-title {
   color: #D4AF37;
   text-decoration: underline;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   margin-top: 1em;
   padding: 20px;
@@ -285,7 +285,7 @@ html, body{
 
 .services-nutrition,
 .services-training {
-  font-size: 18px;
+  font-size: 26px;
   color: white;
   text-align: center;
   padding: 10px;
@@ -389,7 +389,7 @@ html, body{
 }
 
 .about-mission-text {
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.5;
   text-align: left;
   color: white;
@@ -399,7 +399,7 @@ html, body{
 }
 
 .about-mission-author {
-  font-size: 24px;
+  font-size: 26px;
   color: #D4AF37;
   text-align: right;
   margin-right: 5em;
@@ -437,19 +437,19 @@ html, body{
   color: #D4AF37;
   text-decoration: underline;
   padding-bottom: 0.5em;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   text-align: left;
 }
 
 .about-coach-text-title {
   color: #D4AF37;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .about-coach-text {
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.5;
   text-align: left;
   color: white;
@@ -467,7 +467,7 @@ html, body{
 .clients-container-title {
   color: #D4AF37;
   text-decoration: underline;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   grid-column: 1 / -1;
   margin: auto;
@@ -505,7 +505,7 @@ html, body{
 
 .client-quote {
   font-style: italic;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 
